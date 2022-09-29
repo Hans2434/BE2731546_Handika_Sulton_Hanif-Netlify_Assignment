@@ -1,0 +1,81 @@
+nav {
+    background: #06283D;
+}
+
+.inilogo a {
+    font-size: 25px;
+}
+
+.inimenu ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: .5rem;
+}
+
+section .content {
+    grid-template-columns: 50% 50%;
+}
+
+section .content img{
+    width: 250px;
+}
+
+section .content p:last-child{
+    margin: 0;
+}
+
+section .contact-section {
+    margin: 1rem auto
+}
+
+p {
+    line-height: 2;
+}
+
+section form textarea {
+    border: 1px solid black;
+}
+
+section form .submit-btn{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    background: #06283D;
+}
+
+@media screen and (max-width: 1080px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 1rem;
+    }
+    .iniwrapper{
+        padding: 3rem 7rem;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #home img{
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    section form textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    nav .inimenu ul{
+        grid-template-columns: auto auto;
+        gap: .5rem;
+    }
+    #home img{
+        width: 200px;
+    }
+    .iniwrapper{
+        padding: 3rem 2rem;
+    }
+    section .content{
+        grid-template-columns: 100%;
+    }
+}   
